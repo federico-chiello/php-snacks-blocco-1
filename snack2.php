@@ -11,10 +11,14 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
   $mail = $_GET['mail'];
   $age = $_GET['age'];
 
-  $message = 'Accesso negato';
+
   if ((strlen($name) > 3) && (strpos($mail, '@')) && (strpos($mail,'.')) && (is_numeric($age))) {
     $message = 'Accesso riuscito';
-  } 
+  } elseif (empty($name) || empty($mail) || empty($age)){
+    $message = 'Non hai inserito un campo.';
+  } else {
+    $message = 'Accesso negato';
+  }
  ?>
 
 <!-- HTML -->
