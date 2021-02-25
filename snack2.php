@@ -11,7 +11,12 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
   $mail = $_GET['mail'];
   $age = $_GET['age'];
 
-  
+  $message = '';
+  if ((strlen($name) <= 3) && (!strpos($mail, '@')) && (!strpos($mail,'.')) && (!is_numeric($age))) {
+    $message = 'Accesso negato';
+  } else {
+    $message = 'Accesso riuscito';
+  }
  ?>
 
 <!-- HTML -->
@@ -24,6 +29,6 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”.
   <title>Parametri GET</title>
 </head>
 <body>
-
+  <p><?php echo $message; ?></p>
 </body>
 </html>
