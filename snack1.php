@@ -1,7 +1,22 @@
 <!-- Creiamo un array 'matches' contenente altri array i quali rappresentano delle partite di basket di un’ipotetica tappa del calendario. Ogni array della partita avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema: Olimpia Milano - Cantù | 55 - 60 -->
 
 <!-- PHP -->
-
+<?php
+  $matches = [
+    [
+      "squadra di casa" => "Olimpia Milano",
+      "squadra ospite" => "Cantù",
+      "punti squadra di casa" => 74,
+      "punti squadra ospite" => 68
+    ],
+    [
+      "squadra di casa" => "Virtus Bologna",
+      "squadra ospite" => "Varese",
+      "punti squadra di casa" => 72,
+      "punti squadra ospite" => 80
+    ]
+  ];
+ ?>
 <!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +27,9 @@
   <title>Array 'matches'</title>
 </head>
 <body>
+  <?php for ($i=0; $i < count($matches); $i++) { ?>
+    <p><?php  ?></p>
+  <?php } ?>
 
 </body>
 </html>
