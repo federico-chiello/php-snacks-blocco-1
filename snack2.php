@@ -5,7 +5,14 @@
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”. -->
 
 <!-- PHP -->
+<!-- Creo le variabili e utilizzo GET -->
+<?php
+  $name = $_GET['name'];
+  $mail = $_GET['mail'];
+  $age = $_GET['age'];
 
+  
+ ?>
 
 <!-- HTML -->
 <!DOCTYPE html>
