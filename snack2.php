@@ -3,6 +3,11 @@
 2. mail contenga un punto e una chiocciola
 3. age sia un numero.
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”. -->
+
+<!-- PHP -->
+
+
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
