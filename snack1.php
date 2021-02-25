@@ -30,12 +30,13 @@
 <body>
   <?php for ($i=0; $i < count($matches); $i++) {
     $squadraUno = $matches[$i]["squadra di casa"];
-    $squadraDue = $matches[$i]["squadra di casa"];
+    $squadraDue = $matches[$i]["squadra ospite"];
     $punteggioCasa = $matches[$i]["punti squadra di casa"];
     $punteggioOspite = $matches[$i]["punti squadra ospite"];
     ?>
-    
+    <h2><?php echo $squadraUno .'-' .$squadraDue .' ' .'|' .' ' .$punteggioCasa .'-' .$punteggioOspite; ?></h2>
   <?php } ?>
+
 
 </body>
 </html>
