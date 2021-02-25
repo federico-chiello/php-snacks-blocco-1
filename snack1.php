@@ -16,6 +16,7 @@
       "punti squadra ospite" => 80
     ]
   ];
+  var_dump($matches);
  ?>
 <!-- HTML -->
 <!DOCTYPE html>
@@ -27,8 +28,13 @@
   <title>Array 'matches'</title>
 </head>
 <body>
-  <?php for ($i=0; $i < count($matches); $i++) { ?>
-    <p><?php  ?></p>
+  <?php for ($i=0; $i < count($matches); $i++) {
+    $squadraUno = $matches[$i]["squadra di casa"];
+    $squadraDue = $matches[$i]["squadra di casa"];
+    $punteggioCasa = $matches[$i]["punti squadra di casa"];
+    $punteggioOspite = $matches[$i]["punti squadra ospite"];
+    ?>
+    
   <?php } ?>
 
 </body>
